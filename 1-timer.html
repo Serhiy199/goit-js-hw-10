@@ -4,17 +4,27 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        
         <title>Timer</title>
-        <link rel="stylesheet" href="./css/01-gallery.css" />
-      <script type="module" crossorigin src="/goit-js-hw-10/assets/modulepreload-polyfill-ec808ebb.js"></script>
+      <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers.js"></script>
+      <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-ec808ebb.js">
+      <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-651d7991.js">
+      <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-80d0dc0f.css">
+      <link rel="stylesheet" href="/goit-js-hw-10/assets/1-timer-e48d1786.css">
     </head>
     <body>
-        <a href="./index.html">Go to home</a>
+        <a href="./index.html" class="nav-link">Go to home</a>
         <section>
             <h1>Welcome to page Timer</h1>
         </section>
         <input type="text" id="datetime-picker" />
-        <button type="button" data-start>Start</button>
+        <button type="button" class="disable" data-start>Start</button>
 
         <div class="timer">
             <div class="field">
@@ -34,7 +44,7 @@
                 <span class="label">Seconds</span>
             </div>
         </div>
-
+        <!-- <script src="iziToast.min.js" type="text/javascript"></script> -->
         
     </body>
 </html>
